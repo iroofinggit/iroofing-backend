@@ -10,7 +10,7 @@ const app = express();
 dotenv.config();
 app.use(morgan('dev'));
 
-const port  = process.env.PORT;
+const port = process.env.PORT || 5000;
 
 connectDB()
 
